@@ -1,0 +1,67 @@
+.horoscope-result {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.5s ease-in-out;
+  transition: opacity 1s ease-out;
+}
+
+.horoscope-result.fade-out {
+  opacity: 0;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.sign {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #f8f9fa;
+}
+
+.horoscope-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e9ecef;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .horoscope-result {
+    padding: 20px;
+  }
+
+  .emoji {
+    font-size: 2rem;
+  }
+
+  .sign {
+    font-size: 1.5rem;
+  }
+
+  .horoscope-text {
+    font-size: 1rem;
+  }
+}
